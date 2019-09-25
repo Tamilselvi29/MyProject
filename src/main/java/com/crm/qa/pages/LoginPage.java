@@ -15,7 +15,7 @@ public class LoginPage extends TestBase {
 	@FindBy(name = "password")
 	WebElement password;
 
-	@FindBy(xpath = "//input[@type='submit']")
+	@FindBy(xpath = "//input[@type='submit'][@value='Login']")
 	WebElement loginBtn;
 
 	@FindBy(xpath = "//a[text()='Sign Up']")
@@ -39,10 +39,14 @@ public class LoginPage extends TestBase {
 		return crmLogo.isDisplayed();
 	}
 	
-	public HomePage login(String uname,String pwd) {
+	public HomePage login(String uname,String pwd)  {
 		username.sendKeys(uname);
 		password.sendKeys(pwd);
-		loginBtn.click();
+		//JavascriptExecutor js=((JavascriptExecutor)driver);
+		//js.executeScript("arguments[0].click();", loginBtn);
+		
+		loginBtn.submit();
 		return new HomePage();
 	}
+	
 }

@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.poi.hslf.record.Sound;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -22,8 +21,11 @@ public class TestBase {
 		prop=new Properties(); 
 		FileInputStream ip;
 		try {
-			ip = new FileInputStream("E:/selvi/AutomationProject/myproject/src/main/java/com/crm" 
+			//System.out.println("Current Directory : " + System.getProperty("user.dir"));
+			ip = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/crm" 
 					+"/qa/config/config.properties");
+		
+			
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

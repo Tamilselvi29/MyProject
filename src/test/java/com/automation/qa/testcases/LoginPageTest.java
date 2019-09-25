@@ -14,9 +14,9 @@ public class LoginPageTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
 
-//	public LoginPageTest() {
-//		super();
-//	}
+	public LoginPageTest() {
+		super();
+	}
 
 	@BeforeMethod
 	public void setUp() {
@@ -24,13 +24,13 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,enabled=false)
 	public void loginPageTitleTest() {
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled=false)
 	public void crmLogoImageTest() {
 		boolean flag = loginPage.validateCRMImage();
 		Assert.assertTrue(flag);
@@ -43,8 +43,9 @@ public class LoginPageTest extends TestBase {
 	}
 
 	@AfterMethod
-	public void tearDown() {
-		//driver.quit();
+	public void tearDown() throws InterruptedException {
+		
+		driver.quit();
 	}
 
 }
