@@ -13,6 +13,7 @@ import com.crm.qa.util.TestUtil;
 
 //ctrl+shift+o -> to import
 
+@Test(groups= {"HomePageClass"})
 public class HomePageTest extends TestBase{
     LoginPage loginPage;
     HomePage homePage;

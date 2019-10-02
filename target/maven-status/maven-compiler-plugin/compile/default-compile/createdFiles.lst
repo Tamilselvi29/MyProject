@@ -1,0 +1,13 @@
+com\crm\qa\pages\ContactsPage.class
+com\crm\qa\pages\DealsPage.class
+com\crm\qa\pages\HomePage.class
+com\crm\qa\pages\TasksPage.class
+com\crm\qa\listeners\AnnotationTransformer.class
+com\crm\qa\pages\LoginPage.class
+com\crm\qa\ExtentReportListener\ExtentReportTestNG.class
+com\crm\qa\listeners\TestNGListener.class
+com\crm\qa\listeners\Retry.class
+com\crm\qa\base\TestBase.class
+com\crm\qa\util\TestUtil.class
+com\crm\qa\pages\SignUpPage.class
+com\crm\qa\util\WebEventListener.class

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18960" started-at="2019-09-25T04:29:08Z" finished-at="2019-09-25T04:29:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18960" started-at="2019-09-25T04:29:08Z" finished-at="2019-09-25T04:29:27Z">
+      <class name="com.automation.qa.testcases.ContactsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.ContactsPageTest@ae45eb6]" name="setUp" is-config="true" duration-ms="12158" started-at="2019-09-25T04:29:08Z" finished-at="2019-09-25T04:29:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContactTest()[pri:4, instance:com.automation.qa.testcases.ContactsPageTest@ae45eb6]" name="validateCreateNewContactTest" duration-ms="5963" started-at="2019-09-25T04:29:20Z" finished-at="2019-09-25T04:29:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContactTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.ContactsPageTest@ae45eb6]" name="tearDown" is-config="true" duration-ms="807" started-at="2019-09-25T04:29:26Z" finished-at="2019-09-25T04:29:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.qa.testcases.ContactsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

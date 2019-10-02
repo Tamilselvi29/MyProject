@@ -1,11 +1,30 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FREE CRM APP">
+	<listeners>
+		<listener class-name="com.crm.qa.ExtentReportListener.ExtentReportTestNG" />
+		<listener class-name="com.crm.qa.listeners.TestNGListener" />
+	</listeners>
+
 	<test name="Free CRM App Test">
+	    
+	    <groups>
+	        <run>
+	            <exclude name="ContactPageClass"/> 
+	            <exclude name="sanity"/>
+	        </run>
+	    </groups>
+	    
 		<classes>
 			<class name="com.automation.qa.testcases.LoginPageTest" />
-			<class name="com.automation.qa.testcases.HomePageTest" />
-			<class name="com.automation.qa.testcases.ContactsPageTest" />
+			<class name="com.automation.qa.testcases.HomePageTest">
+			    <methods>
+			        <include name="verifyHomePageTitleTest"></include>
+			     </methods>
+			</class>
+			<class name="com.automation.qa.testcases.ContactsPageTest"/>
+			   			 
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

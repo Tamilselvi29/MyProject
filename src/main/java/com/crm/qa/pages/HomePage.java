@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,6 +14,7 @@ import com.crm.qa.base.TestBase;
 public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//td[contains(text(),'User: Tamilselvi Rajan')]")
+	@CacheLookup //will store usernameLabel in cache memory, then next time instead of going again into page, it lookup cache and take the value, so its speed up process
 	WebElement usernameLabel;
 
 	@FindBy(xpath = "//a[@title='Contacts']")

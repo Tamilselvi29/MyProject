@@ -9,6 +9,7 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 
+@Test(groups= {"LoginPageClass"})
 public class LoginPageTest extends TestBase {
 
 	LoginPage loginPage;
@@ -24,19 +25,20 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	@Test(priority = 1,enabled=false)
+	
+	@Test(priority = 1,groups= {"sanity"})
 	public void loginPageTitleTest() {
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.");
 	}
 
-	@Test(priority = 2,enabled=false)
+	@Test(priority = 2,groups= {"sanity"})
 	public void crmLogoImageTest() {
 		boolean flag = loginPage.validateCRMImage();
 		Assert.assertTrue(flag);
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,groups= {"smoke"})
 	public void loginTest() {
 		homePage =loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 

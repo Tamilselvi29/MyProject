@@ -1,0 +1,5 @@
+com\automation\qa\testcases\LoginPageTest.class
+com\automation\qa\testcases\parent.class
+com\automation\qa\testcases\PropertiesTest.class
+com\automation\qa\testcases\HomePageTest.class
+com\automation\qa\testcases\ContactsPageTest.class

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="18262" started-at="2019-10-01T21:58:20Z" finished-at="2019-10-01T21:58:39Z">
+    <groups>
+      <group name="HomePageClass">
+        <method signature="HomePageTest.verifyContactsLinkTest()[pri:3, instance:com.automation.qa.testcases.HomePageTest@6cc4c815]" name="verifyContactsLinkTest" class="com.automation.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.automation.qa.testcases.HomePageTest@6cc4c815]" name="verifyHomePageTitleTest" class="com.automation.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.verifyUserNameTest()[pri:2, instance:com.automation.qa.testcases.HomePageTest@6cc4c815]" name="verifyUserNameTest" class="com.automation.qa.testcases.HomePageTest"/>
+      </group> <!-- HomePageClass -->
+      <group name="smoke">
+        <method signature="LoginPageTest.loginTest()[pri:3, instance:com.automation.qa.testcases.LoginPageTest@3a82f6ef]" name="loginTest" class="com.automation.qa.testcases.LoginPageTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="LoginPageTest.crmLogoImageTest()[pri:2, instance:com.automation.qa.testcases.LoginPageTest@3a82f6ef]" name="crmLogoImageTest" class="com.automation.qa.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.loginPageTitleTest()[pri:1, instance:com.automation.qa.testcases.LoginPageTest@3a82f6ef]" name="loginPageTitleTest" class="com.automation.qa.testcases.LoginPageTest"/>
+      </group> <!-- sanity -->
+      <group name="ContactPageClass">
+        <method signature="ContactsPageTest.selectMultipleContactsTest()[pri:3, instance:com.automation.qa.testcases.ContactsPageTest@56f4468b]" name="selectMultipleContactsTest" class="com.automation.qa.testcases.ContactsPageTest"/>
+        <method signature="ContactsPageTest.selectSingleContactsTest()[pri:2, instance:com.automation.qa.testcases.ContactsPageTest@56f4468b]" name="selectSingleContactsTest" class="com.automation.qa.testcases.ContactsPageTest"/>
+        <method signature="ContactsPageTest.validateCreateNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.automation.qa.testcases.ContactsPageTest@56f4468b]" name="validateCreateNewContactTest" class="com.automation.qa.testcases.ContactsPageTest"/>
+        <method signature="ContactsPageTest.verifyContactPageLabel()[pri:1, instance:com.automation.qa.testcases.ContactsPageTest@56f4468b]" name="verifyContactPageLabel" class="com.automation.qa.testcases.ContactsPageTest"/>
+      </group> <!-- ContactPageClass -->
+      <group name="LoginPageClass">
+        <method signature="LoginPageTest.crmLogoImageTest()[pri:2, instance:com.automation.qa.testcases.LoginPageTest@3a82f6ef]" name="crmLogoImageTest" class="com.automation.qa.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.loginPageTitleTest()[pri:1, instance:com.automation.qa.testcases.LoginPageTest@3a82f6ef]" name="loginPageTitleTest" class="com.automation.qa.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.loginTest()[pri:3, instance:com.automation.qa.testcases.LoginPageTest@3a82f6ef]" name="loginTest" class="com.automation.qa.testcases.LoginPageTest"/>
+      </group> <!-- LoginPageClass -->
+    </groups>
+    <test name="Surefire test" duration-ms="18262" started-at="2019-10-01T21:58:20Z" finished-at="2019-10-01T21:58:39Z">
+      <class name="com.automation.qa.testcases.PropertiesTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.PropertiesTest@100fc185]" name="setUp" is-config="true" duration-ms="9" started-at="2019-10-01T21:58:21Z" finished-at="2019-10-01T21:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.automation.qa.testcases.PropertiesTest@100fc185]" name="test1" duration-ms="2" started-at="2019-10-01T21:58:21Z" finished-at="2019-10-01T21:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- com.automation.qa.testcases.PropertiesTest -->
+      <class name="com.automation.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.HomePageTest@6cc4c815]" name="setUp" is-config="true" duration-ms="17119" started-at="2019-10-01T21:58:21Z" finished-at="2019-10-01T21:58:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.automation.qa.testcases.HomePageTest@6cc4c815]" name="verifyHomePageTitleTest" duration-ms="9" started-at="2019-10-01T21:58:38Z" finished-at="2019-10-01T21:58:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="1086" started-at="2019-10-01T21:58:38Z" finished-at="2019-10-01T21:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.qa.testcases.HomePageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
