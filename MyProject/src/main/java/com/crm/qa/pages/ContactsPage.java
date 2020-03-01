@@ -40,6 +40,10 @@ public class ContactsPage extends TestBase {
 		return contactsLabel.isDisplayed();
 	}
 
+	/**
+	 * 
+	 * @param name
+	 */
 	public void selectContactsByName(String name) {
 		driver.findElement(By.xpath("//a[ contains(text(),'" + name
 				+ "')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']"))
