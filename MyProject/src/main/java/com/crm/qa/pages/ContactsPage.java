@@ -40,7 +40,6 @@ public class ContactsPage extends TestBase {
 		return contactsLabel.isDisplayed();
 	}
 
-	
 	/**
 	 * 
 	 * @param name
