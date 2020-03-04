@@ -52,6 +52,7 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		String url=prop.getProperty("url");
+		driver.manage().deleteAllCookies();
 		
 		driver.get(url);
 	}
